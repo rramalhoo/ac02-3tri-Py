@@ -1,8 +1,9 @@
+from estilos.caminhos import ARQUIVO_TXT
 
-def totalEquipamentos():
+def historicoEquipamentos():
     equipamentos = []
 
-    arquivo = open("equipamentos.txt", "r")
+    arquivo = open(ARQUIVO_TXT, "r")
     linhas = arquivo.readlines()
     arquivo.close()
 
@@ -26,9 +27,3 @@ def totalEquipamentos():
     print("\nTotal de Equipamentos:", len(equipamentos))
 
 
-opc = 1
-
-if opc == 1:
-    totalEquipamentos()
-else:
-    print("Erro")
